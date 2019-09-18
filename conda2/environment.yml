@@ -1,0 +1,6 @@
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=2.7
+  # Check conda for the package and paste it below! ('pkg_name=version')

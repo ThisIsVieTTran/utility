@@ -1,0 +1,11 @@
+version:          '3.7'
+services:
+  jupyterlab:
+    build:        .
+    ports:
+      - 5001:5000
+    # volumes:
+    # Below is the volume for the config
+    #   - ./config:/root/.jupyter
+    restart:      "no"
+    command: jupyter lab --no-browser --allow-root --ip='*' --port=5000
